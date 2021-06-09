@@ -1,8 +1,11 @@
-# RobloxTMScripts
 Tampermonkey Scripts for Roblox.
 
-# Included Scripts
-- [Game Tools](https://github.com/RHGDEV/RobloxTMScripts/raw/master/gametools.user.js)
+---
+
+Repo Scripts | Installation
+------------ | -------------
+Game Tools |[Install](https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js)
+
 
 # Installation
 1. Install [Tampermonkey](https://www.tampermonkey.net/) to your browser.
