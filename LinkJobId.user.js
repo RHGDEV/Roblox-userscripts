@@ -7,8 +7,8 @@
 // @iconURL       https://www.roblox.com/favicon.ico
 // @match         http*://*.roblox.com/games/*
 // @grant         GM_notification
-// @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
-// @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
+// @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/LinkJobId.user.js
+// @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/main/LinkJobId.user.js
 // ==/UserScript==
 /*global Roblox*/
 
