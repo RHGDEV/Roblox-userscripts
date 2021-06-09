@@ -9,8 +9,8 @@
 // @grant         GM_notification
 // @grant         GM_setClipboard
 // @run-at        document-body
-// @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/master/gametools.user.js
-// @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/master/gametools.user.js
+// @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
+// @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
 // ==/UserScript==
 
 function awaitElement(selector, parent = document) {
