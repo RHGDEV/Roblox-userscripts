@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ShortBlox - URL Shortener
 // @namespace    csqrl.railworks2.shortblox
-// @version      0.0.4
+// @version      0.0.5
 // @license      MIT
 // @description  Copies a short URL for the current page to the clipboard, using ShortBlox by railworks2
 // @author       csqrl
