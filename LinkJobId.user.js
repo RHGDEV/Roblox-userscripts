@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name          Link JobId Join
-// @version       0.0.15
+// @version       0.0.16
 // @description   Join game with id (roblox.com/games/000/game?jobId=ServerJobId)
 // @author        RHGRDev
-// @namespace     https://github.com/RHGRDev
 // @iconURL       https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/3/7/4/374b2f132433065f2087b88c43080aba75c21aff_2_32x32.svg
 // @match         http*://*.roblox.com/games/*
 // @grant         GM_notification
