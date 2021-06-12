@@ -5,8 +5,8 @@
 // @license      MIT
 // @description  Copies a short URL for the current page to the clipboard, using ShortBlox by railworks2
 // @author       csqrl
-// @match        http*://devforum.roblox.com/*
 // @match        http*://*.roblox.com/*
+// @match        http*://devforum.roblox.com/*
 // @homepage     https://devforum.link/779370/4
 // @updateURL    https://github.com/RHGDEV/RobloxTMScripts/raw/main/shortblox.user.js
 // @downloadURL  https://github.com/RHGDEV/RobloxTMScripts/raw/main/shortblox.user.js
