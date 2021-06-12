@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name          Roblox Tools
-// @version       0.0.50
+// @version       0.0.55
 // @description   Tools for roblox games
 // @author        RHGDev
-// @namespace     https://github.com/RHGRDev
 // @license       MIT
 // @iconURL       https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/3/7/4/374b2f132433065f2087b88c43080aba75c21aff_2_32x32.svg
 // @match         http*://*.roblox.com/games/*
