@@ -6,7 +6,7 @@ Repo Scripts | Installation
 ------------ | -------------
 Game Tools | [Install](https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js)
 Link JobId | [Install](https://github.com/RHGDEV/RobloxTMScripts/raw/main/LinkJobId.user.js)
-ShortBlox | [Install(https://github.com/RHGDEV/RobloxTMScripts/raw/main/shortblox.user.js)
+ShortBlox | [Install](https://github.com/RHGDEV/RobloxTMScripts/raw/main/shortblox.user.js)
 
 # Installation
 1. Install [Tampermonkey](https://www.tampermonkey.net/) to your selected browser:
