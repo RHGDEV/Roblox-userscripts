@@ -3,8 +3,9 @@
 // @version       0.0.50
 // @description   Tools for roblox games
 // @author        RHGDev
+// @namespace     https://github.com/RHGRDev
 // @license       MIT
-// @iconURL       https://www.roblox.com/favicon.ico
+// @iconURL       https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/3/7/4/374b2f132433065f2087b88c43080aba75c21aff_2_32x32.svg
 // @match         http*://*.roblox.com/games/*
 // @grant         GM_notification
 // @grant         GM_setClipboard
