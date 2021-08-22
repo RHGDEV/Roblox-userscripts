@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Roblox Tools
-// @version       0.0.55
+// @version       0.0.6
 // @description   Tools for roblox games
 // @author        RHGDev
 // @license       MIT
@@ -64,7 +64,7 @@ function awaitElement(selector, parent = document) {
         //console.log(findAttemptCount)
         if (findAttemptCount >= 50) {
             GM_notification({
-                text: "No empty server was found.",
+                text: "No more empty servers was found.",
                 title: "Failed..",
                 image: "https://www.roblox.com/favicon.ico",
                 silent: true,
@@ -169,27 +169,37 @@ function awaitElement(selector, parent = document) {
             const findServerButton = document.createElement("button")
             const createInviteButton = document.createElement("button")
 
-            container.setAttribute("style", "display: flex; width: 100%; margin-bottom: 1rem; align-items: center; column-gap: 1rem;")
-            container.innerHTML = `
+            container.classList.add("game-details-play-button-container")
+            container.setAttribute("style", "display: flex; width: 100%; margin-top: 0.3rem; column-gap: 0.3rem;")
+            /*container.innerHTML = `
                 <label class="text-label">Game Tools</label>
-            `
+            `*/
 
-            findServerButton.classList.add("btn-growth-md")
-            findServerButton.classList.add("btn-primary-md")
-            findServerButton.textContent = "Find Server"
+            //findServerButton.classList.add("ng-binding")
+            //findServerButton.classList.add("btn-primary-md")// Solid White
+            //findServerButton.classList.add("btn-control-sm") // Hollow
+            findServerButton.classList.add("btn-control-xs") // XSmall Hollow
+            findServerButton.classList.add("btn-full-width")
+            //findServerButton.classList.add("btn-control-xs")
+            //findServerButton.classList.add("rbx-game-server-join")
+            findServerButton.textContent = "Join a Small Server"
             findServerButton.addEventListener("click", () => {
                 findAttemptCount = 0;
                 searchForGame(gid, 0, 10000);
             })
             createInviteButton.classList.add("btn-growth-md")
             createInviteButton.classList.add("btn-primary-md")
+            //createInviteButton.classList.add("btn-control-xs")
+            //createInviteButton.classList.add("rbx-game-server-join")
             createInviteButton.textContent = "Create Invite"
             createInviteButton.addEventListener("click", () => {
                 createInviteGame();
             })
 
             container.append(findServerButton)
-            container.append(createInviteButton)
-            content.prepend(container)
+            //container.append(createInviteButton)
+            //content.prepend(container)
+            //document.getElementsByClassName('game-buttons-container')[0].prepend(container);
+            document.getElementsByClassName('game-details-play-button-container')[0].after(container);
         })
 })();
