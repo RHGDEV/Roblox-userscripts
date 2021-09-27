@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name          Roblox Tools
-// @version       0.0.7
+// @version       0.0.9
 // @description   Tools for roblox games
 // @author        RHGDev
 // @license       MIT
 // @iconURL       https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/3/7/4/374b2f132433065f2087b88c43080aba75c21aff_2_32x32.svg
 // @match         http*://*.roblox.com/games/*
 // @grant         GM_notification
-// @grant         GM_setClipboard
-// @run-at        document-body
+// @run-at        document-idle
 // @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
 // @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/main/gametools.user.js
 // ==/UserScript==
+/*global Roblox*/
 
 function awaitElement(selector, parent = document) {
     return new Promise((resolve, reject) => {
@@ -47,8 +47,9 @@ function awaitElement(selector, parent = document) {
 
 (async () => {
     // Gets the game ID
-    const gameUrl = window.location
-    const gid = Number(gameUrl.pathname.split('/')[2]);
+    const gid = String(location.href.match(/\/(\d+)\//g)).match(/\d+/g);
+    //const gameUrl = window.location
+    //const gid = Number(gameUrl.pathname.split('/')[2]);
     let findAttemptCount = 0
     if (!gid) return;
     /*GM_notification({
@@ -113,34 +114,9 @@ function awaitElement(selector, parent = document) {
     }
 
     const createInviteGame = function (gid, min, max) {
-        GM_notification({
-            text: "Starting searcher with id \"" + gid + "\"",
-            title: "Starting..",
-            image: "https://www.roblox.com/favicon.ico",
-            silent: true,
-            timeout: 5e3,
-            onClick: null
-        });
-
-        var gId = prompt("Please enter the server gID", "00000000-0000-00000-0000-000000000000");
-        if (gId == null || gId == "") {} else {
-            let gidUrl = gameUrl + `?jobId=` + gId
-            GM_setClipboard(gidUrl, "text")
-
-            GM_notification({
-                text: gidUrl,
-                title: "Copied to Clipboard!",
-                silent: true,
-                timeout: 8e3,
-                onClick: () => {
-                    GM_openInTab(gidUrl, {
-                        active: true,
-                        insert: true,
-                        setParent: true,
-                    })
-                }
-            })
-        }
+        var PlaceID = String(location.href.match(/\/(\d+)\//g)).match(/\d+/g);
+        var jobid = prompt("Please enter the jobId", "00000000-0000-00000-0000-000000000000");
+        if (jobid !== null) Roblox.GameLauncher.joinGameInstance(PlaceID, jobid);
     }
 
     /*let h3ader = document.createElement("h3")
@@ -175,31 +151,31 @@ function awaitElement(selector, parent = document) {
                 <label class="text-label">Game Tools</label>
             `*/
 
-            //findServerButton.classList.add("ng-binding")
-            //findServerButton.classList.add("btn-primary-md")// Solid White
-            //findServerButton.classList.add("btn-control-sm") // Hollow
-            findServerButton.classList.add("btn-control-xs") // XSmall Hollow
+            findServerButton.classList.add("btn-control-sm")
             findServerButton.classList.add("btn-full-width")
-            //findServerButton.classList.add("btn-control-xs")
-            //findServerButton.classList.add("rbx-game-server-join")
-            findServerButton.textContent = "Join a Small Server"
+            findServerButton.textContent = "Find Small Server"
             findServerButton.addEventListener("click", () => {
+                GM_notification({
+                    text: "Starting searcher with game id \"" + gid + "\"",
+                    title: "Starting..",
+                    image: "https://www.roblox.com/favicon.ico",
+                    silent: true,
+                    timeout: 5e3,
+                    onClick: null
+                });
                 findAttemptCount = 0;
                 searchForGame(gid, 0, 10000);
             })
-            createInviteButton.classList.add("btn-growth-md")
-            createInviteButton.classList.add("btn-primary-md")
-            //createInviteButton.classList.add("btn-control-xs")
-            //createInviteButton.classList.add("rbx-game-server-join")
-            createInviteButton.textContent = "Create Invite"
+            createInviteButton.classList.add("btn-control-sm")
+            createInviteButton.textContent = "Job Id"
             createInviteButton.addEventListener("click", () => {
                 createInviteGame();
             })
-
             container.append(findServerButton)
-            //container.append(createInviteButton)
+            container.append(createInviteButton)
             //content.prepend(container)
             //document.getElementsByClassName('game-buttons-container')[0].prepend(container);
+            //document.getElementsByClassName('game-details-play-button-container')[0].after(container);
             document.getElementsByClassName('game-details-play-button-container')[0].after(container);
         })
 })();
