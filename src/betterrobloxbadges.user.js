@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name          Better Roblox Badges
-// @version       0.0.16
+// @version       0.0.02
 // @description   Improves Roblox Badges
 // @author        jmkd3v - RHGRDev (Tampermonkey Port)
 // @homepage      https://github.com/jmkd3v/Better-Roblox-Badges-Extension
-// @iconURL       https://raw.githubusercontent.com/jmkd3v/Better-Roblox-Badges-Extension/main/images/RocketLogo.svg
+// @iconURL       https://cdn.glitch.com/c9aca3ea-4558-456b-8206-a8f36b94cd20%2FAccelerator.svg
 // @match         http*://*.roblox.com/users/*/profile
 // @run-at        document-idle
 // @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/betterrobloxbadges.user.js
@@ -60,6 +60,7 @@ function generateBadgeElement(name, description, href, image) {
     imageElement.style.display = "inline-block";
 	imageElement.style.backgroundImage = "url('" + image + "')";
     imageElement.style.backgroundSize = "cover";
+    imageElement.style.verticalAlign = "middle";
 
 	let nameElement = document.createElement("span"); // the name
 	nameElement.classList.add("font-header-2", "text-overflow", "item-name");
