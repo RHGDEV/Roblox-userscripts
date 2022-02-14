@@ -1,7 +1,4 @@
-Tampermonkey Scripts for Roblox.
-
----
-
+# Tampermonkey Scripts for Roblox.
 Current Repo Scripts | Install Link
 ------------ | -------------
 Game Tools | [Install](https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/gametools.user.js)
