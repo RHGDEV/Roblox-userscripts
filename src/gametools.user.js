@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Roblox Tools
-// @version       0.1.1
+// @version       0.1.2
 // @description   Tools for roblox games
 // @author        RHGDev
 // @license       MIT
@@ -8,8 +8,8 @@
 // @match         http*://*.roblox.com/games/*
 // @grant         GM_notification
 // @run-at        document-idle
-// @updateURL     https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/gametools.user.js
-// @downloadURL   https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/gametools.user.js
+// @updateURL     https://github.com/RHGDEV/Roblox-userscripts/raw/main/src/gametools.user.js
+// @downloadURL   https://github.com/RHGDEV/Roblox-userscripts/raw/main/src/gametools.user.js
 // ==/UserScript==
 /*global Roblox*/
 
