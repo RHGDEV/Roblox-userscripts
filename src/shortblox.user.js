@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         ShortBlox - URL Shortener
 // @namespace    csqrl.railworks2.shortblox
-// @version      0.0.6
+// @version      0.0.7
 // @license      MIT
 // @description  Copies a short URL for the current page to the clipboard, using ShortBlox by railworks2
 // @author       csqrl
 // @match        http*://*.roblox.com/*
 // @match        http*://devforum.roblox.com/*
 // @homepage     https://devforum.link/779370/4
-// @updateURL    https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/shortblox.user.js
-// @downloadURL  https://github.com/RHGDEV/RobloxTMScripts/raw/main/src/shortblox.user.js
+// @updateURL    https://github.com/RHGDEV/Roblox-userscripts/raw/main/src/shortblox.user.js
+// @downloadURL  https://github.com/RHGDEV/Roblox-userscripts/raw/main/src/shortblox.user.js
 // @iconURL      https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/3/7/4/374b2f132433065f2087b88c43080aba75c21aff_2_32x32.svg
 // @run-at       document-body
 // @grant        GM_setClipboard
