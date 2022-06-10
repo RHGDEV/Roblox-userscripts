@@ -11,8 +11,8 @@
 
 ## Installation
 1. Install a extension to use userscripts.
-	- [ ] [Tampermonkey](https://www.tampermonkey.net/) (certified)
-	- [ ] [Violentmonkey](https://violentmonkey.github.io/get-it/)
+	* [Tampermonkey](https://www.tampermonkey.net/) (certified)
+	* [Violentmonkey](https://violentmonkey.github.io/get-it/)
 	* [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)
 
 2. Once installed you can use the scripts above.
